@@ -1,0 +1,5 @@
+# ignore binary file
+*.[ao]
+
+# ignore vim temporary file
+.*.swp
