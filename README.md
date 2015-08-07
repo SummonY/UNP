@@ -7,19 +7,21 @@
 
 ## Step 1: 
 
-make lib:
-    1. cd lib
-    2. make
-    3. make lib
+make lib:  
+    1. cd lib  
+    2. make  
+    3. make lib  
 
-clean file :
+
+clean file :  
         make clean
 
 ## Step 2: 
 
-make exec:
-    1. cd dic
-    2. make
+make exec:  
+    1. cd dic  
+    2. make  
 
-clean file:
+
+clean file:  
     make clean
