@@ -87,7 +87,8 @@ int main(int argc, char **argv)
     for (;;)
     {
         connfd = Accept(listenfd, (SA *)NULL, NULL);
-
+        
+        printf("Accept block.\n");
         ticks = time(NULL);
         snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
         Write(connfd, buff, strlen(buff));
