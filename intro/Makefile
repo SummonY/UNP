@@ -4,13 +4,17 @@ INCLUDE_H 	:= -I../lib/
 LIBA		:= -L../lib/ -lunp
 
 
-PROGS = daytimetcpcli
+PROGS = daytimetcpcli daytimetcpcliv6
 
 all: ${PROGS}
 
 
 daytimetcpcli: daytimetcpcli.c
 	$(CC) $^ -o $@ $(CFLAGS) $(INCLUDE_H) $(LIBA) 
+
+daytimetcpcliv6 : daytimetcpcliv6.c
+	$(CC) $^ -o $@ $(CFLAGS) $(INCLUDE_H) $(LIBA)
+
 
 
 clean:
