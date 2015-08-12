@@ -4,7 +4,7 @@ INCLUDE_H 	:= -I../lib/
 LIBA		:= -L../lib/ -lunp
 
 
-PROGS = daytimetcpcli daytimetcpcliv6 daytimetcpsrv
+PROGS = daytimetcpcli daytimetcpcliv6 daytimetcpsrv byteorder
 
 all: ${PROGS}
 
@@ -16,6 +16,9 @@ daytimetcpcliv6 : daytimetcpcliv6.c
 	$(CC) $^ -o $@ $(CFLAGS) $(INCLUDE_H) $(LIBA)
 
 daytimetcpsrv : daytimetcpsrv.c
+	$(CC) $^ -o $@ $(CFLAGS) $(INCLUDE_H) $(LIBA)
+
+byteorder : byteorder.c
 	$(CC) $^ -o $@ $(CFLAGS) $(INCLUDE_H) $(LIBA)
 
 .PHONY: clean

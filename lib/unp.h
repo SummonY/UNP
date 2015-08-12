@@ -1,6 +1,7 @@
 #ifndef __unp_h
 #define __unp_h
 
+#include "../config.h"
 
 
 #include <stdio.h>
